@@ -19,7 +19,7 @@ toggleButton.addEventListener("click", () => {
 
 // ===== Footer =====
 const currentYear = new Date().getFullYear();
-footer.textContent = `© ${currentYear} — Deploy ด้วย GitHub Pages 🚀`;
+footer.textContent = `© ${currentYear} — Deploy ด้วย GitHub Pages🚀`;
 
 // ===== เปลี่ยนชื่อ =====
 const defaultName = "นาย พงศกร แก้วจันทร์";
