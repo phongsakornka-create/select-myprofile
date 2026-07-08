@@ -16,21 +16,36 @@
 <body>
   <main class="card">
     <img class="card__avatar" src="https://avatars.githubusercontent.com/u/9919?v=4" alt="รูปโปรไฟล์">
-    <h1 class="card__name">นาย พงศกร เเก้วจันทร์</h1>
+    <h1 id="profileName" class="card__name">นาย พงศกร เเก้วจันทร์</h1>
     <p class="card__title">นักศึกษาวิศวกรรมคอมพิวเตอร์</p>
     <p class="card__bio">กำลังเรียนรู้ Full-stack Development และ DevOps</p>
  
     <ul class="card__links">
-      <li><a href="https://github.com/phongsakornka-create/select-topic-week01">GitHub</a></li>
+      <li><a href="https://github.com/phongsakornka-create">GitHub</a></li>
       <li><a href="Phongsakorn.ka@ksu.ac.th">Email</a></li>
     </ul>
- 
-    <button id="theme-toggle" class="card__button">🌙 โหมดกลางคืน</button>
- 
+  
+
+<button id="theme-toggle" class="card__button">
+      🌙 โหมดกลางคืน
+    </button>
+
+    <h2 class="card__student">
+      หัวข้อพิเศษทางด้านการพัฒนาซอฟต์แวร์
+    </h2>
+
+    <!-- ช่องกรอกชื่อ -->
+    <input
+      id="nameInput"
+      type="text"
+      placeholder="กรอกชื่อใหม่"
+    >
+
     <footer id="card-footer" class="card__footer"></footer>
+
   </main>
- 
-  <!-- JS ภายนอก: วางท้าย body เสมอ -->
+
   <script src="./script.js"></script>
+
 </body>
 </html>

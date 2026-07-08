@@ -1,17 +1,17 @@
 /* ===== ตัวแปรสี (CSS Custom Properties) ===== */
 :root {
-  --bg: #586891;
-  --card-bg: #e72323;
+  --bg: #0c2729;
+  --card-bg: #84b888;
   --text: #1f2933;
   --accent: #2563eb;
 }
  
 /* ธีมมืด: สลับด้วยการเติม class ที่ <body> ผ่าน JS */
 body.dark {
-  --bg: #23e76e;
-  --card-bg: #075f1a;
-  --text: #f55111;
-  --accent: #1f2f42;
+  --bg: #7c2f0b;
+  --card-bg: #4d1417;
+  --text: #1373f0;
+  --accent: #5b10d4;
 }
  
 /* ===== Layout ===== */
@@ -36,7 +36,7 @@ body {
   width: min(420px, 90vw);
   padding: 2.5rem 2rem;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(219, 193, 193, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
   transition: background-color 0.3s;
 }
@@ -86,12 +86,39 @@ body {
   border: none;
   border-radius: 8px;
   background-color: var(--accent);
-  color: #251b1b;
+  color: #ffffff;
   cursor: pointer;
 }
  
+
 .card__footer {
   margin-top: 1.5rem;
   font-size: 0.85rem;
   opacity: 0.7;
 }
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.card__student{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0 20px;
+}
+
+
+.card__student {  
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffd700;
+}
+ 

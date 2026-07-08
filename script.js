@@ -18,3 +18,12 @@ toggleButton.addEventListener('click', () => {
 // ===== Footer: ปีอัตโนมัติด้วย template literal =====
 const currentYear = new Date().getFullYear();
 footer.textContent = `© ${currentYear} — Deploy ด้วย GitHub Pages 🚀`;
+
+const profileName = document.getElementById("profileName");
+const nameInput = document.getElementById("nameInput");
+
+const defaultName = "ธรรมรัตน์ ไพลสาลี";
+
+nameInput.addEventListener("input", function () {
+    profileName.textContent = this.value || defaultName;
+});
