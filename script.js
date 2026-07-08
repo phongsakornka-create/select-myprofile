@@ -1,29 +1,29 @@
 // ===== State =====
 let isDark = false;
- 
-// ===== Element References =====
-const toggleButton = document.querySelector('#theme-toggle');
-const footer = document.querySelector('#card-footer');
- 
-// ===== Event: สลับธีม =====
-// สังเกต: ผูก event ใน JS ไม่ใช่ onclick ใน HTML (Separation of Concerns)
-toggleButton.addEventListener('click', () => {
-  isDark = !isDark;
-  document.body.classList.toggle('dark', isDark);
- 
-  // ใช้ template literal ตามมาตรฐานของวิชา
-  toggleButton.textContent = isDark ? `☀️ โหมดกลางวัน` : `🌙 โหมดกลางคืน`;
-});
- 
-// ===== Footer: ปีอัตโนมัติด้วย template literal =====
-const currentYear = new Date().getFullYear();
-footer.textContent = `© ${currentYear} — Deploy ด้วย GitHub Pages 🚀`;
 
+// ===== Element References =====
+const toggleButton = document.getElementById("theme-toggle");
+const footer = document.getElementById("card-footer");
 const profileName = document.getElementById("profileName");
 const nameInput = document.getElementById("nameInput");
 
-const defaultName = "ธรรมรัตน์ ไพลสาลี";
+// ===== Event: สลับธีม =====
+toggleButton.addEventListener("click", () => {
+    isDark = !isDark;
+    document.body.classList.toggle("dark", isDark);
 
-nameInput.addEventListener("input", function () {
-    profileName.textContent = this.value || defaultName;
+    toggleButton.textContent = isDark
+        ? "☀️ โหมดกลางวัน"
+        : "🌙 โหมดกลางคืน";
+});
+
+// ===== Footer =====
+const currentYear = new Date().getFullYear();
+footer.textContent = `© ${currentYear} — Deploy ด้วย GitHub Pages 🚀`;
+
+// ===== เปลี่ยนชื่อ =====
+const defaultName = "นาย พงศกร แก้วจันทร์";
+
+nameInput.addEventListener("input", () => {
+    profileName.textContent = nameInput.value.trim() || defaultName;
 });
