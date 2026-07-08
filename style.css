@@ -6,7 +6,7 @@
   --accent: #2563eb;
 }
  
-/* ธีมมืด สลับด้วยการเติม class ที่ <body> ผ่าน JS */
+/* ธีมมืด: สลับด้วยการเติม class ที่ <body> ผ่าน JS */
 body.dark {
   --bg: #7c2f0b;
   --card-bg: #4d1417;
